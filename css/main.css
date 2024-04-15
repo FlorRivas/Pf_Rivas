@@ -317,7 +317,7 @@ a:hover {
   left: 0;
 }
 .main_cont__img-portada {
-  background-image: url(../../img/imgs_pag_index/portada.webp);
+  background-image: url(img/imgs_pag_index/portada.webp);
   background-size: cover;
   background-attachment: fixed;
   background-position: 54% 20%;
@@ -521,16 +521,16 @@ footer {
   }
 }
 .pie_pag__cont2 .icn.bi_mail {
-  background-image: url("../../img/imgs_gen/mail.svg");
+  background-image: url("img/imgs_gen/mail.svg");
 }
 .pie_pag__cont2 .icn.bi_wht {
-  background-image: url("../../img/imgs_gen/whatsapp.svg");
+  background-image: url("img/imgs_gen/whatsapp.svg");
 }
 .pie_pag__cont2 .icn.bi_fb {
-  background-image: url("../../img/imgs_gen/facebook.svg");
+  background-image: url("img/imgs_gen/facebook.svg");
 }
 .pie_pag__cont2 .icn.bi_ig {
-  background-image: url("../../img/imgs_gen/Instagram.svg");
+  background-image: url("img/imgs_gen/Instagram.svg");
 }
 
 /*# sourceMappingURL=main.css.map */
