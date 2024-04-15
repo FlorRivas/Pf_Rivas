@@ -520,13 +520,13 @@ footer {
     margin-bottom: 2em;
   }
 }
-.pie_pag__cont2 .icn.bi_mail {
+.pie_pag__cont2 .bi_mail {
   background-image: url(../img/imgs_gen/mail.svg);
 }
-.pie_pag__cont2 .icn.bi_wht {
+.pie_pag__cont2 .bi_wht {
   background-image: url(../img/imgs_gen/whatsapp.svg);
 }
-.pie_pag__cont2 .icn.bi_fb {
+.pie_pag__cont2 .bi_fb {
   background-image: url(../img/imgs_gen/facebook.svg);
 }
 .pie_pag__cont2 .icn.bi_ig {
