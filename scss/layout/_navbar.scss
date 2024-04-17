@@ -76,7 +76,7 @@
                 gap: functions.pixeles-em(56);
             }
             
-            &--busqueda {
+            &-busqueda {
                 width: functions.pixeles-em(224);
                 @include mixins.flexible(flex, row, space-between, center);
                 gap: functions.pixeles-em(8);
