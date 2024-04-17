@@ -139,17 +139,6 @@ ul li a {
 .navegacion__cont_item-a:hover {
   --clip_p:polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
-@media screen and (max-width: 1500px) {
-  .navegacion__cont_item-a {
-    cursor: none;
-  }
-  .navegacion__cont_item-a:hover {
-    display: none;
-  }
-  .navegacion__cont_item-a:active {
-    color: #fbeed9;
-  }
-}
 .navegacion__cont_iconos_nav {
   display: flex;
   flex-direction: row;
@@ -196,6 +185,15 @@ ul li a {
   .navegacion__cont_input:checked + .navegacion__cont_nav {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     overflow-x: hidden;
+  }
+  .navegacion__cont_item-a {
+    cursor: none;
+  }
+  .navegacion__cont_item-a:hover {
+    display: none;
+  }
+  .navegacion__cont_item-a:active {
+    color: #fbeed9;
   }
 }
 
