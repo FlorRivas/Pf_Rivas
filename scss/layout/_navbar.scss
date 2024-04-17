@@ -39,7 +39,7 @@
 
         &_item {
             padding-top: 5px;
-            &--a {
+            &-a {
                 --clip_p: polygon(0 0, 0 0, 0 100%, 0% 100%);
                 &::after{
                     content: "";
