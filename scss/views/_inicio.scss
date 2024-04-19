@@ -32,17 +32,17 @@
         margin-left: functions.pixeles-em(80);
         gap: functions.pixeles-em(32);
         z-index: 2;
-        @include movil(320px){
+        @include movil_min(320px){
             margin: functions.pixeles-em(320) auto functions.pixeles-em(128);
             gap: functions.pixeles-em(16);
         }
-        @include movil(){
+        @include movil_min(){
             margin-left: functions.pixeles-em(32);
         }
-        @include movil(1024px){
+        @include movil_min(1024px){
             margin-left: functions.pixeles-em(48);
         }
-        @include movil(1760px){
+        @include movil_min(1760px){
             margin-left: functions.pixeles-em(64);
         }
     }

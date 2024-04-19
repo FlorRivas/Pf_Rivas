@@ -52,18 +52,19 @@
                 }
                 &:hover{
                     --clip_p:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                    @include movil(1500px){
+                        cursor: none;
+                        display:none;
+                    }
                 }
-                // @include movil(1500px){
-                //     &{
-                //         cursor: none;
-                //     }
-                //     &:hover{
-                //         display:none;
-                //     }
-                //     &:active{
-                //         color: $color-secundary;
-                //     }
-                // }
+                @include movil(1500px){
+                    &:active{
+                        display: block;
+                        transition:none;
+                        color: $color-secundary;
+                        border-bottom: .3rem solid;
+                    }
+                }
             }
         }
 
@@ -80,6 +81,9 @@
                 width: functions.pixeles-em(224);
                 @include mixins.flexible(flex, row, space-between, center);
                 gap: functions.pixeles-em(8);
+                @include movil(1500px){
+                    margin-bottom: functions.pixeles-em(16);
+                }
             }
         }
 
@@ -107,21 +111,6 @@
             &_input:checked + &_nav{
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
                 overflow-x: hidden;
-            }
-
-            &_item{
-                &-a{
-
-                    &{
-                        cursor: none;
-                    }
-                    &:hover{
-                        display:none;
-                    }
-                    &:active{
-                        color: $color-secundary;
-                    }
-                }
             }
         }
     }
