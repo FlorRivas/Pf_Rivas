@@ -141,4 +141,11 @@ a:hover{
     color: $color-secundary;
 }
 
+.item-a_active{
+    color: $color-secundary;
+    border-bottom: 0.19rem solid;
+    padding-bottom: functions.pixeles-em(6.08);
+    transition: none;
+}
+
 /* Fin Navbar */

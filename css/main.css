@@ -232,6 +232,13 @@ a:hover {
   color: #fbeed9;
 }
 
+.item-a_active {
+  color: #fbeed9;
+  border-bottom: 0.19rem solid;
+  padding-bottom: 0.38em;
+  transition: none;
+}
+
 /* Fin Navbar */
 /* Buttons */
 .main_cont__btn {
@@ -321,7 +328,7 @@ a:hover {
   height: 100dvh;
   background-image: linear-gradient(to top, #262626, transparent);
   position: absolute;
-  top: 0;
+  top: 1px;
   left: 0;
 }
 .main_cont__img-portada {
