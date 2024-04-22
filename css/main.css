@@ -295,6 +295,41 @@ a:hover {
 .main_cont__btn:active svg, .main_cont__btn:hover svg {
   fill: #262626;
 }
+.main_cont__btn_pro {
+  display: flex;
+  flex-flow: row wrap;
+}
+@media screen and (max-width: 768px) {
+  .main_cont__btn_pro {
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
+.main_cont__btn_filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.1em;
+  width: auto;
+}
+.main_cont__btn_tabs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.main_cont__btn_tabs-item {
+  padding: 1em;
+}
+@media screen and (max-width: 768px) {
+  .main_cont__btn_tabs-item {
+    padding: 0.5em;
+  }
+}
+.main_cont__btn_svg_filter {
+  width: 40px;
+  height: 40px;
+}
 .main_cont__icon-descarga {
   width: 1.2em;
   height: auto;
@@ -314,8 +349,14 @@ a:hover {
   box-shadow: 0 1px 3px 0 rgba(41, 167, 26, 0.35), 0 4px 8px 3px rgba(41, 167, 26, 0.2);
 }
 
+.icon_whatsapp_fixed img {
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+}
+
 /* Fin Buttons */
-/* Main Inicio */
+/* Pagina Inicio */
 .main_cont {
   width: 100%;
   height: auto;
@@ -370,7 +411,7 @@ a:hover {
   }
 }
 
-/* Fin Main Inicio */
+/* Fin Pagina Inicio */
 /* Contenido General */
 .main_cont__ft1 {
   font-family: "Vollkorn-Regular";
@@ -416,6 +457,15 @@ a:hover {
 }
 
 /* Fin Pagina Nosotros */
+/* Pagina Productos */
+.main_cont_img_gen {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Fin de Pagina Productos */
 /*  Footer */
 footer {
   position: relative;
@@ -429,6 +479,12 @@ footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  gap: 3em;
+}
+@media screen and (max-width: 960px) {
+  .pie_pag {
+    gap: 2em;
+  }
 }
 @media screen and (max-width: 768px) {
   .pie_pag {
@@ -448,11 +504,22 @@ footer {
   cursor: pointer;
   align-items: center;
 }
+@media screen and (max-width: 1024px) {
+  .pie_pag ul .link_secc a {
+    cursor: none;
+  }
+}
 .pie_pag__cont1 {
   width: 28%;
   margin-bottom: 1em;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 960px) {
+  .pie_pag__cont1 {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 .pie_pag h3 {
   font-family: "Vollkorn-Regular";
@@ -478,10 +545,17 @@ footer {
   font-size: 1rem;
 }
 .pie_pag__cont2 {
-  width: 60%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  gap: 3em;
+}
+@media screen and (max-width: 960px) {
+  .pie_pag__cont2 {
+    gap: 2em;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 768px) {
   .pie_pag__cont1 {
@@ -492,11 +566,7 @@ footer {
   }
 }
 .pie_pag__cont2 .cont_pie_selec {
-  margin-bottom: 1em;
-  width: 28%;
-}
-.pie_pag__cont2 div:nth-child(1) {
-  padding-left: 1.875em;
+  width: auto;
 }
 .pie_pag__cont2 .cont_pie_selec h2 {
   font-family: "Vollkorn-Regular";
@@ -532,7 +602,6 @@ footer {
   }
   .pie_pag__cont2 .cont_pie_selec {
     width: 100%;
-    margin-bottom: 2em;
   }
 }
 .pie_pag__cont2 .bi_mail {

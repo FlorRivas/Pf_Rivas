@@ -16,20 +16,23 @@
         @include movil(){width: 14em;}
         @include movil(1024px){width: 15em;}
         
-        &--text{
+        &--text {
             font-size: functions.pixeles-em(20);
             font-weight: 600;
             @include movil(620px){font-size: functions.pixeles-rem(17.60);}
             @include movil(){font-size: functions.pixeles-rem(17.60);}
         }
+        
         &--primary {
             background-color: $color-secundary;
             color: $color-tertiary;
         }
+
         &--secondary {
             border: 1px solid $color-primary;
             color: $color-primary;
         }
+
         &:active,
         &:hover {
             background-color: $color-primary;
@@ -40,7 +43,37 @@
             fill: $color-tertiary;
             }
         }
+        
+        &_pro{
+            @include flexible_flow-2(flex, row, wrap);
+            @include movil(){
+                @include flexible_flow-2(flex, column, wrap);
+            };
+        }
+
+        &_filter{
+            @include mixins.flexible-3(flex, row, center);
+            padding: functions.pixeles-em(1.6);
+            width: auto;
+        }
+
+        &_tabs{
+            @include mixins.flexible_flow(flex, row, wrap, center, center);
+        }
+
+        &_tabs-item{
+            padding: functions.pixeles-em(16);
+            @include movil(){
+                padding: functions.pixeles-em(8);
+            }
+        }
+
+        &_svg_filter{
+            width: 40px;
+            height: 40px;
+        }
     }
+
     &__icon-descarga {
         width: functions.pixeles-em(19.2);
         height: auto;
@@ -60,4 +93,11 @@
     border: 1px solid #29a71a;
     box-shadow: 0 1px 3px 0 rgba(41, 167, 26,.35), 0 4px 8px 3px rgba(41, 167, 26,.2);
 }
+
+.icon_whatsapp_fixed img{
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+}
+
 /* Fin Buttons */

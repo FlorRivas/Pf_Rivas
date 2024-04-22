@@ -12,6 +12,12 @@ footer {
     width: 100vw;
     padding: functions.pixeles-rem(64) 4.5% functions.pixeles-rem(48);
     @include flexible_flow-3(flex, row, wrap, space-between);
+    gap: 3em;
+    @include movil(960px){
+        &{
+            gap: functions.pixeles-em(32);
+        }
+    }
 
     @include movil(){
         &{
@@ -29,6 +35,9 @@ footer {
         display: flex;
         cursor: pointer;
         align-items: center;
+        @include movil(1024px){
+            cursor: none;
+        }
     }
 
     // Contenido 1 pie pag
@@ -37,6 +46,10 @@ footer {
         margin-bottom: functions.pixeles-em(16);
         display: flex;
         flex-direction: column;
+        @include movil(960px){
+            width: 80%;
+            margin: 0 auto;
+        }
     }
 
     h3 {
@@ -69,8 +82,14 @@ footer {
 
     // Contenido 2 pie pag
     &__cont2 {
-        width: 60%;
         @include flexible_flow-3(flex, row, wrap, space-between);
+        gap: 3em;
+        @include movil(960px){
+            gap:functions.pixeles-em(32);
+            width: 80%;
+            margin: 0 auto;
+        }
+
     }
 
     @include movil(){
@@ -83,12 +102,7 @@ footer {
     }
 
     &__cont2 .cont_pie_selec {
-        margin-bottom: functions.pixeles-em(16);
-        width: 28%;
-    }
-
-    &__cont2 div:nth-child(1) {
-        padding-left: functions.pixeles-em(30);
+        width: auto;
     }
 
     &__cont2 .cont_pie_selec h2 {
@@ -102,7 +116,7 @@ footer {
         padding: 10px 0;
         color: $color-primary;
         font-size: functions.pixeles-rem(16);
-        text-decoration: none;
+        text-decoration: none;        
     }
 
     @include movil(){
@@ -129,7 +143,6 @@ footer {
         }
         &__cont2 .cont_pie_selec{
             width: 100%;
-            margin-bottom: functions.pixeles-em(32);
         }
     }
 
