@@ -67,9 +67,11 @@ footer {
         position: relative;
         width: functions.pixeles-em(168);
     }
-
-    @include movil_min(320px){
-        &__cont1 &__logo, h3{
+    &__cont1 &__logo, h3{
+        @include movil_min(320px){
+            margin-bottom: functions.pixeles-em(8);
+        }
+        @include movil_min(770px){
             margin-bottom: functions.pixeles-em(16);
         }
     }

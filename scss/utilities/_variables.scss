@@ -2,12 +2,15 @@
 $color-primary: #f1bf7b;
 $color-secundary: #fbeed9;
 $color-tertiary: #262626;
+$color-quaternary: #6B0A05;
+$color-fifth: #f2f2f2;
 
 // variables de background
 $background-primary: $color-tertiary;
 $background-secundary: $color-primary;
 $background-tertiary: $color-secundary;
 $background-quaternary: rgba(134, 162, 187, 0.3);
+$background-fifth: $color-fifth;
 
 // variables para fuentes
 $font-primary: 'Vollkorn-Regular';

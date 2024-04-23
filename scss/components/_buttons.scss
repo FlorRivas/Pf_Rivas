@@ -5,17 +5,20 @@
 .main_cont{
 
     &__btn {
-        width: functions.pixeles-em(256);
-        height: functions.pixeles-em(55.2);
         padding: 20px 40px;
         border-radius: 40px;
         @include mixins.flexible(flex, row, center, center);
         text-decoration: none;
         cursor: pointer;
         gap: 8px;
-        @include movil(){width: 14em;}
-        @include movil(1024px){width: 15em;}
         
+        &--wh{
+            width: functions.pixeles-em(256);
+            height: functions.pixeles-em(55.2);
+            @include movil_min(320px){width: 14em;}
+            @include movil_min(1024px){width: 15em;}
+        }
+
         &--text {
             font-size: functions.pixeles-em(20);
             font-weight: 600;
@@ -24,8 +27,8 @@
         }
         
         &--primary {
-            background-color: $color-secundary;
-            color: $color-tertiary;
+            background-color: $background-primary;
+            color: $color-primary;
         }
 
         &--secondary {
@@ -39,8 +42,10 @@
             color: $color-tertiary;
             font-weight: 600;
             box-shadow: 0 1px 3px 0 rgba(241, 191, 123,.25), 0 4px 8px 3px rgba(241, 191, 123,.15);
+            transition: .5s;
             svg{
             fill: $color-tertiary;
+            transition: .5s;
             }
         }
         
@@ -63,6 +68,7 @@
 
         &_tabs-item{
             padding: functions.pixeles-em(16);
+            text-decoration: none;
             @include movil(){
                 padding: functions.pixeles-em(8);
             }
@@ -72,9 +78,16 @@
             width: 40px;
             height: 40px;
         }
+
+        &_card--wh{
+            width: functions.pixeles-em(208);
+            height: functions.pixeles-em(32);
+            @include movil_min(320px){width: 14em;}
+            @include movil_min(1024px){width: 15em;}
+        }
     }
 
-    &__icon-descarga {
+    &__icon {
         width: functions.pixeles-em(19.2);
         height: auto;
         fill: $color-primary;

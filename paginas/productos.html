@@ -59,6 +59,7 @@
     <section id="Productos" class="container">
       <h1 class="col-12 main_cont__ft3-Regular main_cont__c--primary h1 mt-4">Productos</h1>
       <section class="row">
+        <!-- Inicio de Acordión -->
         <div class="bd-example m-0 border-0 bd-example-offcanvas p-0 bg-body-tertiary overflow-hidden">
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
@@ -77,8 +78,8 @@
                     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
                       <div class="accordion-body">
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                          <label class="form-check-label" for="flexCheckDefault">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheck_1">
+                          <label class="form-check-label" for="flexCheck_1">
                             De menos a m&aacute;s
                           </label>
                         </div>
@@ -95,21 +96,21 @@
                       <div class="accordion-body">
                         <h3>Color</h3>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                          <label class="form-check-label" for="flexCheckDefault">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheck_2">
+                          <label class="form-check-label" for="flexCheck_2">
                             Blanco
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                          <label class="form-check-label" for="flexCheckDefault">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheck_3">
+                          <label class="form-check-label" for="flexCheck_3">
                             Negro
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                          <label class="form-check-label" for="flexCheckDefault">
-                            Amrarillo
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheck_4">
+                          <label class="form-check-label" for="flexCheck_4">
+                            otros
                           </label>
                         </div>
                       </div>
@@ -124,8 +125,8 @@
                     <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
                       <div class="accordion-body">
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                          <label class="form-check-label" for="flexCheckDefault">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheck_5">
+                          <label class="form-check-label" for="flexCheck_5">
                             M&aacute;s popular
                           </label>
                         </div>
@@ -137,30 +138,78 @@
             </div>
           </div>
         </div>
+        <!-- Fin de Acordión -->
+        <!-- Inicio de contenedor de botón Filtro y Tabs -->
         <section id="section_pro" class="col-12 gap-2 col-xxl-12 pt-4 main_cont__btn_pro">
+          <!-- Inicio de botón filtro -->
           <button class="col-12 col-md-1 main_cont__btn_filter" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <img class="main_cont__btn_svg_filter" src="../img/imgs_pag_productos/filtro.svg" alt="boton filtro">
           <span class="m-2">Filtro</span>
           </button>
+          <!-- Fin de botón filtro -->
+          <!-- Inicio de tabs -->
           <section id="tabs" class="col-12 gap-2 col-md-10 main_cont__btn_tabs">
-            <a href="" class="main_cont__btn_tabs-item">Polos que inspiran</a>
-            <a href="" class="main_cont__btn_tabs-item">Tazas Personalizadas</a>
-            <a href="" class="main_cont__btn_tabs-item">Fundas de celulares</a>
+            <a href="" class="main_cont__btn_tabs-item main_cont__c--primary">Polos que inspiran</a>
+            <a href="" class="main_cont__btn_tabs-item main_cont__c--primary">Tazas Personalizadas</a>
+            <a href="" class="main_cont__btn_tabs-item main_cont__c--primary">Fundas de celulares</a>
           </section>
+          <!-- Fin de tabs -->
         </section>
+        <!-- Fin de contenedor de botón Filtro y Tabs -->
       </section>
-      <section class="row pt-5">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
+      <!-- Inicio de Cards -->
+      <section class="row main_cont__card_gen">
+        <!-- Card1 -->
+        <div class="card col-12 col-md-4 main_cont__card main_cont__bg--fifth">
+          <img class="main_cont__img_gen" src="../img/imgs_pag_productos/imgs_polos/polo-1.webp" class="card-img-top" alt="polo de mujer con mensaje positivo suenha en grande">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h4 class="card-title main_cont__text_title main_cont__c--tertiary">POR AMOR</h4>
+            <p class="card-text main_cont__space_line_v main_cont__ft4-Regular main_cont__c--tertiary">Polo manga corta | Mujer | <span class="main_cont__ft4-Regular main_cont__c--tertiary">Mensaje motivacional</span>
+            </p>
+            <p class="main_cont__c--tertiary main_cont__c--quaternary main_cont__text_precio">
+              <span class="main_cont__text_small">S/60.00</span>S/49.00
+            </p>
+            <a href="#" class="main_cont__btn main_cont__btn--text main_cont__btn--primary p-2">Agregar
+              <svg id="icon-cart" class="main_cont__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+            </a>
           </div>
         </div>
+        <!-- Fin Card1 -->
+        <!-- Card2 -->
+        <div class="card col-12 col-md-4 main_cont__card main_cont__bg--fifth">
+          <img class="main_cont__img_gen" src="../img/imgs_pag_productos/imgs_polos/polo-2.webp" class="card-img-top" alt="polo unisex con mensaje dios es bueno">
+          <div class="card-body">
+            <h4 class="card-title main_cont__text_title main_cont__c--tertiary">POR AMOR</h4>
+            <p class="card-text main_cont__space_line_v main_cont__ft4-Regular main_cont__c--tertiary">Polo manga corta | Unisex | <span class="main_cont__ft4-Regular main_cont__c--tertiary">Mensaje motivacional</span>
+            </p>
+            <p class="main_cont__c--tertiary main_cont__c--quaternary main_cont__text_precio">
+              <span class="main_cont__text_small">S/60.00</span>S/49.00
+            </p>
+            <a href="#" class="main_cont__btn main_cont__btn--text main_cont__btn--primary p-2">Agregar
+              <svg id="icon-cart" class="main_cont__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+            </a>
+          </div>
+        </div>
+        <!-- Fin Card2 -->
+        <!-- Card3 -->
+        <div class="card col-12 col-md-4 main_cont__card main_cont__bg--fifth">
+          <img class="main_cont__img_gen" src="../img/imgs_pag_productos/imgs_polos/polo-3.webp" class="card-img-top" alt="polo de mujer con mensaje algo nuevo dios esta haciendo">
+          <div class="card-body">
+            <h4 class="card-title main_cont__text_title main_cont__c--tertiary">POR AMOR</h4>
+            <p class="card-text main_cont__space_line_v main_cont__ft4-Regular main_cont__c--tertiary">Polo manga corta | Mujer | <span class="main_cont__ft4-Regular main_cont__c--tertiary">Mensaje motivacional</span>
+            </p>
+            <p class="main_cont__c--tertiary main_cont__c--quaternary main_cont__text_precio">
+              <span class="main_cont__text_small">S/60.00</span>S/49.00
+            </p>
+            <a href="#" class="main_cont__btn main_cont__btn--text main_cont__btn--primary p-2">Agregar
+              <svg id="icon-cart" class="main_cont__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+            </a>
+          </div>
+        </div>
+        <!-- Fin Card3 -->
       </section>
+      <!-- Fin de Cards -->
     </section>
-
     <div class="icon_whatsapp_fixed">
       <a href="index.html">
         <img src="../img/imgs_gen/whatsapp_floating.svg" alt="boton de whatsapp que redirecciona a otra pagina para contactarse con por amor">

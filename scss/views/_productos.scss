@@ -4,12 +4,44 @@
 
 .main_cont{
 
-    &_img_gen{
+    &__card_gen{
+        padding: functions.pixeles-em(48) functions.pixeles-em(24) functions.pixeles-em(48);
+    }
+
+    &__card{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    &__img_gen{
         width: 100%;
         height: auto;
         background-size: cover;
         background-repeat: no-repeat;
+        border-radius: 1rem 1rem 0 0;
         // aspect-ratio: ;
+    }
+    
+    &__text_title{
+        font-size: functions.pixeles-rem(16.8);
+    }
+
+    &__space_line_v{
+        @include flexible_flow-2(flex, row, wrap);
+        gap: functions.pixeles-em(1.84);
+        margin-bottom: functions.pixeles-em(8);
+    }
+
+    &__text_precio{
+        font-size: functions.pixeles-rem(20);
+    }
+
+    &__text_small{
+        font-family: $font-quaternary;
+        font-size: functions.pixeles-rem(16);
+        margin-right: functions.pixeles-em(8);
+        text-decoration: line-through;
+        color: #7a7e83;
     }
 }
 /* Fin de Pagina Productos */

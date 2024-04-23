@@ -14,6 +14,10 @@
         line-height: normal;
     }
 
+    &__ft4-Regular{
+        font-family: $font-secundary;
+    }
+
     &__c--primary{
         color: $color-primary;
     }
@@ -23,7 +27,19 @@
     }
 
     &__c--tertiary{
-        color: $font-primary;
+        color: $color-tertiary;
+    }
+
+    &__c--quaternary{
+        color: $color-quaternary;
+    }
+
+    &__c--fifth{
+        color: $color-fifth;
+    }
+
+    &__bg--fifth{
+        background-color: $background-fifth;
     }
 }
 /* Fin Contenido General */
