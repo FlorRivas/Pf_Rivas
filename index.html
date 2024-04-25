@@ -7,6 +7,8 @@
     <meta name="keywords" content="regalos, mensajes de amor, productos de calidad, reflexión espiritual, sentimientos, afecto, momentos felices">
     <title>Por Amor Tienda Regalos Personalizados</title>
     <link rel="shortcut icon" href="./img/imgs_gen/iso.ico"  type="image/x-icon">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <!-- CSS de Bootstrap que descargue -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- Nuestro css -->
@@ -61,7 +63,7 @@
   <main id="main_cont" class="main_cont">
       <div class="main_cont__bg-gradient"></div>
       <section class="main_cont__img-portada">
-          <div class="main_cont__txt">
+          <div data-aos="fade" data-aos-easing="ease-in-sine" data-aos-duration="2000" class="main_cont__txt">
               <h1 class="main_cont__ft3-Regular main_cont__c--secundary display-4">Una manera<br>de mostrar <span class="main_cont__ft1 display-3">AMOR</span></h1>
               <h2 class="main_cont__ft2-light main_cont__c--secundary display-6">Descubre c&oacute;mo<br>en nuestro cat&aacute;logo</h2>
               <a href="#" class="main_cont__btn main_cont__btn--wh main_cont__btn--text main_cont__btn--secondary">Descarga
@@ -140,6 +142,11 @@
           </div>
       </section>
   </footer>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <!-- JS de Bootstrap que descargue -->
   <script src="./js/bootstrap.bundle.min.js"></script>
 </body>

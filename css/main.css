@@ -52,7 +52,7 @@ ol, ul {
 /* header */
 header {
   position: sticky;
-  top: 0;
+  top: -1px;
   width: 100vw;
   max-width: 100%;
   margin: 0 auto;
@@ -280,6 +280,20 @@ a:hover {
     font-size: 1.1rem;
   }
 }
+.main_cont__btn--text--card {
+  font-size: 1em;
+  font-weight: 600;
+}
+@media screen and (max-width: 620px) {
+  .main_cont__btn--text--card {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main_cont__btn--text--card {
+    font-size: 0.875rem;
+  }
+}
 .main_cont__btn--primary {
   background-color: #262626;
   color: #f1bf7b;
@@ -302,6 +316,7 @@ a:hover {
 .main_cont__btn_pro {
   display: flex;
   flex-flow: row wrap;
+  padding: 1em 0;
 }
 @media screen and (max-width: 768px) {
   .main_cont__btn_pro {
@@ -489,19 +504,32 @@ a:hover {
 
 /* Fin Pagina Nosotros */
 /* Pagina Productos */
+.main_cont__filter_tabs {
+  margin: 0 auto;
+}
+.main_cont__cards {
+  justify-content: center;
+  gap: 2em;
+  padding-top: 1em;
+  flex-flow: row wrap;
+  position: relative;
+  margin: 0 auto;
+}
 .main_cont__card_gen {
   padding: 3em 1.5em 3em;
 }
 .main_cont__card {
   padding-right: 0px;
   padding-left: 0px;
+  border-radius: 0.8em;
+  width: 16.5em;
 }
 .main_cont__img_gen {
   width: 100%;
   height: auto;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 0.8em 0.8em 0 0;
 }
 .main_cont__text_title {
   font-size: 1.05rem;
@@ -529,11 +557,12 @@ footer {
   position: relative;
   background-color: #262626;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.45);
+  margin: 0 auto;
 }
 
 .pie_pag {
-  width: 100vw;
-  padding: 4rem 4.5% 3rem;
+  width: 100%;
+  padding: 4em 4em 3em;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;

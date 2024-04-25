@@ -6,11 +6,12 @@ footer {
     position: relative;
     background-color: $color-tertiary;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.45);
+    margin: 0 auto;
 }
 
 .pie_pag {
-    width: 100vw;
-    padding: functions.pixeles-rem(64) 4.5% functions.pixeles-rem(48);
+    width: 100%;
+    padding: functions.pixeles-em(64) functions.pixeles-em(64) functions.pixeles-em(48);
     @include flexible_flow-3(flex, row, wrap, space-between);
     gap: 3em;
     @include movil(960px){

@@ -4,6 +4,19 @@
 
 .main_cont{
 
+    &__filter_tabs{
+        margin: 0 auto;
+    }
+
+    &__cards{
+        justify-content: center;
+        gap: functions.pixeles-em(32);
+        padding-top: functions.pixeles-em(16);
+        flex-flow: row wrap;
+        position: relative;
+        margin: 0 auto;
+    }
+
     &__card_gen{
         padding: functions.pixeles-em(48) functions.pixeles-em(24) functions.pixeles-em(48);
     }
@@ -11,6 +24,8 @@
     &__card{
         padding-right: 0px;
         padding-left: 0px;
+        border-radius: .8em;
+        width: functions.pixeles-em(264);
     }
 
     &__img_gen{
@@ -18,8 +33,7 @@
         height: auto;
         background-size: cover;
         background-repeat: no-repeat;
-        border-radius: 1rem 1rem 0 0;
-        // aspect-ratio: ;
+        border-radius: .8em .8em 0 0;
     }
     
     &__text_title{
