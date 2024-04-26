@@ -316,7 +316,7 @@ a:hover {
 .main_cont__btn_pro {
   display: flex;
   flex-flow: row wrap;
-  padding: 1em 0;
+  padding: 0;
 }
 @media screen and (max-width: 768px) {
   .main_cont__btn_pro {
@@ -505,12 +505,12 @@ a:hover {
 /* Fin Pagina Nosotros */
 /* Pagina Productos */
 .main_cont__filter_tabs {
-  margin: 0 auto;
+  margin: 4em auto;
 }
 .main_cont__cards {
   justify-content: center;
   gap: 2em;
-  padding-top: 1em;
+  padding-top: 3em;
   flex-flow: row wrap;
   position: relative;
   margin: 0 auto;

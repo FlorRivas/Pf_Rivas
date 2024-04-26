@@ -5,13 +5,13 @@
 .main_cont{
 
     &__filter_tabs{
-        margin: 0 auto;
+        margin: functions.pixeles-em(64) auto;
     }
 
     &__cards{
         justify-content: center;
         gap: functions.pixeles-em(32);
-        padding-top: functions.pixeles-em(16);
+        padding-top: functions.pixeles-em(48);
         flex-flow: row wrap;
         position: relative;
         margin: 0 auto;

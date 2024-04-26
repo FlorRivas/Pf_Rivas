@@ -58,7 +58,7 @@
         
         &_pro{
             @include flexible_flow-2(flex, row, wrap);
-            padding: functions.pixeles-em(16) 0;
+            padding: 0;
             @include movil(){
                 @include flexible_flow-2(flex, column, wrap);
             };
