@@ -96,12 +96,13 @@
             &_nav{
                 @include mixins.flexible(flex, column, space-evenly, center);
                 position: fixed;
-                top: 80px;
+                top: 88px;
                 bottom: 0;
                 background: $background-primary;
                 width: 100%;
                 font-size: functions.pixeles-rem(18);
                 left: 0;
+                gap: functions.pixeles-em(8);
                 clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             }
             &_input:checked + &_nav{

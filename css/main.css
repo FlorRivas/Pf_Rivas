@@ -187,12 +187,13 @@ ul li a {
     justify-content: space-evenly;
     align-items: center;
     position: fixed;
-    top: 80px;
+    top: 88px;
     bottom: 0;
     background: #262626;
     width: 100%;
     font-size: 1.125rem;
     left: 0;
+    gap: 0.5em;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
   .navegacion__cont_input:checked + .navegacion__cont_nav {
