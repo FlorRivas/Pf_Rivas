@@ -70,7 +70,7 @@
             @include movil(1500px) {
                 flex-direction: column-reverse;
                 align-items: center;
-                gap: functions.pixeles-em(56);
+                gap: functions.pixeles-em(40);
             }
             
             &-busqueda {
@@ -102,7 +102,7 @@
                 width: 100%;
                 font-size: functions.pixeles-rem(18);
                 left: 0;
-                gap: functions.pixeles-em(8);
+                gap: functions.pixeles-em(16);
                 clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             }
             &_input:checked + &_nav{
