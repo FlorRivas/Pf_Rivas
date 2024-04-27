@@ -65,9 +65,9 @@
         }
 
         &_filter{
-            @include mixins.flexible-3(flex, row, center);
-            padding: functions.pixeles-em(1.6);
+            padding: functions.pixeles-em(4) functions.pixeles-em(8);
             width: auto;
+            background: none;
         }
 
         &_tabs{
@@ -85,6 +85,7 @@
         &_svg_filter{
             width: 40px;
             height: 40px;
+            fill: $color-primary;
         }
 
         &_card--wh{

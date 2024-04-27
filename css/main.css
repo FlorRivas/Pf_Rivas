@@ -157,7 +157,7 @@ ul li a {
   .navegacion__cont_iconos_nav {
     flex-direction: column-reverse;
     align-items: center;
-    gap: 3.5em;
+    gap: 2.5em;
   }
 }
 .navegacion__cont_iconos_nav-busqueda {
@@ -193,7 +193,7 @@ ul li a {
     width: 100%;
     font-size: 1.125rem;
     left: 0;
-    gap: 0.5em;
+    gap: 1em;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
   .navegacion__cont_input:checked + .navegacion__cont_nav {
@@ -320,11 +320,9 @@ a:hover {
   }
 }
 .main_cont__btn_filter {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0.1em;
+  padding: 0.25em 0.5em;
   width: auto;
+  background: none;
 }
 .main_cont__btn_tabs {
   display: flex;
@@ -344,6 +342,7 @@ a:hover {
 .main_cont__btn_svg_filter {
   width: 40px;
   height: 40px;
+  fill: #f1bf7b;
 }
 .main_cont__btn_card--wh {
   width: 13em;
