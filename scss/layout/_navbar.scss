@@ -52,10 +52,6 @@
                 }
                 &:hover{
                     --clip_p:polygon(0 0, 100% 0, 100% 100%, 0 100%);
-                    @include movil(1500px){
-                        cursor: none;
-                        display:none;
-                    }
                 }
                 @include movil(1500px){
                     &:active{

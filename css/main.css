@@ -140,12 +140,6 @@ ul li a {
   --clip_p:polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 @media screen and (max-width: 1500px) {
-  .navegacion__cont_item-a:hover {
-    cursor: none;
-    display: none;
-  }
-}
-@media screen and (max-width: 1500px) {
   .navegacion__cont_item-a:active {
     display: block;
     transition: none;
