@@ -65,9 +65,16 @@
         }
 
         &_filter{
-            padding: functions.pixeles-em(4) functions.pixeles-em(8);
+            padding: functions.pixeles-em(3.2) functions.pixeles-em(8);
             width: auto;
             background: none;
+            gap: 2px;
+        }
+
+        &_svg_filter{
+            width: 40px;
+            height: 40px;
+            fill: $color-primary;
         }
 
         &_tabs{
@@ -80,12 +87,6 @@
             @include movil(){
                 padding: functions.pixeles-em(8);
             }
-        }
-
-        &_svg_filter{
-            width: 40px;
-            height: 40px;
-            fill: $color-primary;
         }
 
         &_card--wh{

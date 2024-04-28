@@ -140,11 +140,15 @@ ul li a {
   --clip_p:polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 @media screen and (max-width: 1500px) {
-  .navegacion__cont_item-a:active {
-    display: block;
+  .navegacion__cont_item-a:hover {
+    cursor: none;
     transition: none;
+  }
+  .navegacion__cont_item-a .item-a_active:active {
     color: #fbeed9;
-    border-bottom: 0.3rem solid;
+    border-bottom: 0.19rem solid;
+    padding-bottom: 0.38em;
+    transition: none;
   }
 }
 .navegacion__cont_iconos_nav {
@@ -320,9 +324,15 @@ a:hover {
   }
 }
 .main_cont__btn_filter {
-  padding: 0.25em 0.5em;
+  padding: 0.2em 0.5em;
   width: auto;
   background: none;
+  gap: 2px;
+}
+.main_cont__btn_svg_filter {
+  width: 40px;
+  height: 40px;
+  fill: #f1bf7b;
 }
 .main_cont__btn_tabs {
   display: flex;
@@ -338,11 +348,6 @@ a:hover {
   .main_cont__btn_tabs-item {
     padding: 0.5em;
   }
-}
-.main_cont__btn_svg_filter {
-  width: 40px;
-  height: 40px;
-  fill: #f1bf7b;
 }
 .main_cont__btn_card--wh {
   width: 13em;
@@ -453,6 +458,9 @@ a:hover {
 }
 .main_cont__ft4-Regular {
   font-family: "NotoSans-Regular";
+}
+.main_cont__fs-1rem {
+  font-size: 1rem;
 }
 .main_cont__c--primary {
   color: #f1bf7b;

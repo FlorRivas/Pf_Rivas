@@ -54,13 +54,18 @@
                     --clip_p:polygon(0 0, 100% 0, 100% 100%, 0 100%);
                 }
                 @include movil(1500px){
-                    &:active{
-                        display: block;
-                        transition:none;
+                    &:hover{
+                        cursor: none;
+                        transition: none;
+                    }
+                    .item-a_active:active{
                         color: $color-secundary;
-                        border-bottom: .3rem solid;
+                        border-bottom: 0.19rem solid;
+                        padding-bottom: functions.pixeles-em(6.08);
+                        transition: none;
                     }
                 }
+                
             }
         }
 
