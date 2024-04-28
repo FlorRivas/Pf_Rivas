@@ -340,13 +340,18 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .main_cont__btn_tabs {
+    margin-top: 1em;
+  }
+}
 .main_cont__btn_tabs-item {
   padding: 1em;
   text-decoration: none;
 }
 @media screen and (max-width: 768px) {
   .main_cont__btn_tabs-item {
-    padding: 0.5em;
+    padding: 1em;
   }
 }
 .main_cont__btn_card--wh {
@@ -510,21 +515,42 @@ a:hover {
   margin: 4em auto;
 }
 .main_cont__cards {
-  justify-content: center;
   gap: 2em;
   padding-top: 3em;
-  flex-flow: row wrap;
   position: relative;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .main_cont__cards {
+    padding-top: 0;
+  }
+}
 .main_cont__card_gen {
-  padding: 3em 1.5em 3em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 3em;
+}
+@media screen and (max-width: 768px) {
+  .main_cont__card_gen {
+    gap: 2em;
+  }
 }
 .main_cont__card {
   padding-right: 0px;
   padding-left: 0px;
   border-radius: 0.8em;
   width: 16.5em;
+}
+@media screen and (max-width: 768px) {
+  .main_cont__card {
+    width: 14em;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main_cont__card {
+    margin: 0 auto;
+  }
 }
 .main_cont__img_gen {
   width: 100%;

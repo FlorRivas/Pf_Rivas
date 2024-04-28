@@ -79,13 +79,16 @@
 
         &_tabs{
             @include mixins.flexible_flow(flex, row, wrap, center, center);
+            @include movil(){
+                margin-top: functions.pixeles-em(16);
+            }
         }
 
         &_tabs-item{
             padding: functions.pixeles-em(16);
             text-decoration: none;
             @include movil(){
-                padding: functions.pixeles-em(8);
+                padding: functions.pixeles-em(16);
             }
         }
 

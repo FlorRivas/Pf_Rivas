@@ -9,16 +9,21 @@
     }
 
     &__cards{
-        justify-content: center;
         gap: functions.pixeles-em(32);
         padding-top: functions.pixeles-em(48);
-        flex-flow: row wrap;
         position: relative;
         margin: 0 auto;
+        @include movil(){
+            padding-top: 0;
+        }
     }
 
     &__card_gen{
-        padding: functions.pixeles-em(48) functions.pixeles-em(24) functions.pixeles-em(48);
+        @include flexible_flow-3(flex, row, wrap, space-between);
+        gap: functions.pixeles-em(48);
+        @include movil(){
+            gap: functions.pixeles-em(32);
+        }
     }
 
     &__card{
@@ -26,6 +31,12 @@
         padding-left: 0px;
         border-radius: .8em;
         width: functions.pixeles-em(264);
+        @include movil(){
+            width: functions.pixeles-em(224);
+        }
+        @include movil(576px){
+            margin: 0 auto;
+        }
     }
 
     &__img_gen{

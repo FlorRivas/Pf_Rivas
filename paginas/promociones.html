@@ -55,7 +55,264 @@
     </nav>
   </header>
   <!-- Main -->
-  <main>
+  <main id="main_cont_promo" class="main_cont p-4">
+    <section id="Promociones" class="container">
+      <h1 class="col-12 main_cont__ft3-Regular main_cont__c--primary h1 mt-4">Promociones</h1>
+      <section id="filter_tabs" class="row main_cont__filter_tabs">
+        <!-- Inicio de Acordión -->
+        <div class="bd-example m-0 border-0 bd-example-offcanvas p-0 bg-body-tertiary overflow-hidden">
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h2 class="offcanvas-title" id="offcanvasNavbarLabel">Filtro</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        Precio
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                      <div class="accordion-body">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheck_1">
+                          <label class="form-check-label" for="flexCheck_1">
+                            De menos a m&aacute;s
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Categor&iacute;as
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <h3>Color</h3>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheck_2">
+                          <label class="form-check-label" for="flexCheck_2">
+                            Blanco
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheck_3">
+                          <label class="form-check-label" for="flexCheck_3">
+                            Negro
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheck_4">
+                          <label class="form-check-label" for="flexCheck_4">
+                            otros
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        Popularidad
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheck_5">
+                          <label class="form-check-label" for="flexCheck_5">
+                            M&aacute;s popular
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Fin de Acordión -->
+        <!-- Inicio de contenedor de botón Filtro y Tabs -->
+        <section id="section_pro" class="col-12 gap-2 col-xxl-12 main_cont__btn_pro">
+          <!-- Inicio de botón filtro -->
+          <div class="main_cont__btn_pro">
+            <button class="col-12 col-md-1 main_cont__btn_filter main_cont__btn main_cont__btn--secondary main_cont__btn--text" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <svg id="icon-filtro" class="main_cont__btn_svg_filter" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.375 18C3.375 9.92555 9.92555 3.375 18 3.375C26.0744 3.375 32.625 9.92555 32.625 18C32.625 26.0744 26.0744 32.625 18 32.625C9.92555 32.625 3.375 26.0744 3.375 18ZM18 5.625C11.1682 5.625 5.625 11.1682 5.625 18C5.625 24.8318 11.1682 30.375 18 30.375C24.8318 30.375 30.375 24.8318 30.375 18C30.375 11.1682 24.8318 5.625 18 5.625Z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 14.625C9 14.0037 9.50368 13.5 10.125 13.5H25.875C26.4963 13.5 27 14.0037 27 14.625C27 15.2463 26.4963 15.75 25.875 15.75H10.125C9.50368 15.75 9 15.2463 9 14.625ZM11.25 19.125C11.25 18.5037 11.7537 18 12.375 18H23.625C24.2463 18 24.75 18.5037 24.75 19.125C24.75 19.7463 24.2463 20.25 23.625 20.25H12.375C11.7537 20.25 11.25 19.7463 11.25 19.125ZM14.625 23.625C14.625 23.0037 15.1287 22.5 15.75 22.5H20.25C20.8713 22.5 21.375 23.0037 21.375 23.625C21.375 24.2463 20.8713 24.75 20.25 24.75H15.75C15.1287 24.75 14.625 24.2463 14.625 23.625Z"/>
+            </svg>
+            <span class="main_cont__ft4-Regular main_cont__fs-1rem">Filtro</span>
+            </button>
+          </div>
+          <!-- Fin de botón filtro -->
+          <!-- Inicio de tabs -->
+          <section id="tabs" class="col-12 gap-2 col-md-10 main_cont__btn_tabs">
+            <a href="#cards_polos" class="main_cont__btn_tabs-item main_cont__c--primary">Polos que inspiran</a>
+            <a href="#cards_tazas" class="main_cont__btn_tabs-item main_cont__c--primary">Tazas Personalizadas</a>
+            <a href="#cards_fundas" class="main_cont__btn_tabs-item main_cont__c--primary">Fundas de celulares</a>
+          </section>
+          <!-- Fin de tabs -->
+        </section>
+        <!-- Fin de contenedor de botón Filtro y Tabs -->
+      </section>
+      <!-- Inicio de Cards Polos -->
+      <section id="cards_polos" class="row main_cont__cards mb-3">
+        <h3 data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" class="col-12 main_cont__ft3-Regular main_cont__c--primary h2 mb-3">Polos que inspiran</h3>
+        <article class="main_cont__card_gen">
+          <!-- Card1 -->
+          <div id="card_1" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" class="card col-12 col-sm-4 col-md-3 main_cont__card main_cont__bg--fifth">
+            <img class="main_cont__img_gen" src="../img/imgs_pag_productos/imgs_polos/polo-1.webp" class="card-img-top" alt="polo de mujer con mensaje positivo suenha en grande">
+            <div class="card-body">
+              <h4 class="card-title main_cont__text_title main_cont__c--tertiary">POR AMOR</h4>
+              <p class="card-text main_cont__space_line_v main_cont__ft4-Regular main_cont__c--tertiary">Polo manga corta | Mujer | <span class="main_cont__ft4-Regular main_cont__c--tertiary">Mensaje motivacional</span>
+              </p>
+              <p class="main_cont__c--tertiary main_cont__c--quaternary main_cont__text_precio">
+                <span class="main_cont__text_small">S/60.00</span>S/49.00
+              </p>
+              <a href="#" class="main_cont__btn main_cont__btn--text--card main_cont__btn--primary p-2">Agregar
+                <svg id="icon-cart" class="main_cont__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+              </a>
+            </div>
+          </div>
+          <!-- Fin Card1 -->
+          <!-- Card2 -->
+          <div id="card_2" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" class="card col-12 col-sm-4 col-md-3 main_cont__card main_cont__bg--fifth">
+            <img class="main_cont__img_gen" src="../img/imgs_pag_productos/imgs_polos/polo-2.webp" class="card-img-top" alt="polo unisex con mensaje dios es bueno">
+            <div class="card-body">
+              <h4 class="card-title main_cont__text_title main_cont__c--tertiary">POR AMOR</h4>
+              <p class="card-text main_cont__space_line_v main_cont__ft4-Regular main_cont__c--tertiary">Polo manga corta | Mujer | <span class="main_cont__ft4-Regular main_cont__c--tertiary">Mensaje motivacional</span>
+              </p>
+              <p class="main_cont__c--tertiary main_cont__c--quaternary main_cont__text_precio">
+                <span class="main_cont__text_small">S/60.00</span>S/55.00
+              </p>
+              <a href="#" class="main_cont__btn main_cont__btn--text--card main_cont__btn--primary p-2">Agregar
+                <svg id="icon-cart" class="main_cont__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+              </a>
+            </div>
+          </div>
+          <!-- Fin Card2 -->
+          <!-- Card3 -->
+          <div id="card_3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" class="card col-12 col-sm-4 col-md-3 main_cont__card main_cont__bg--fifth">
+            <img class="main_cont__img_gen" src="../img/imgs_pag_productos/imgs_polos/polo-3.webp" class="card-img-top" alt="polo de mujer con mensaje algo nuevo dios esta haciendo">
+            <div class="card-body">
+              <h4 class="card-title main_cont__text_title main_cont__c--tertiary">POR AMOR</h4>
+              <p class="card-text main_cont__space_line_v main_cont__ft4-Regular main_cont__c--tertiary">Polo manga corta | Mujer | <span class="main_cont__ft4-Regular main_cont__c--tertiary">Mensaje motivacional</span>
+              </p>
+              <p class="main_cont__c--tertiary main_cont__c--quaternary main_cont__text_precio">
+                <span class="main_cont__text_small">S/60.00</span>S/49.00
+              </p>
+              <a href="#" class="main_cont__btn main_cont__btn--text--card main_cont__btn--primary p-2">Agregar
+                <svg id="icon-cart" class="main_cont__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+              </a>
+            </div>
+          </div>
+          <!-- Fin Card3 -->
+          <!-- Card4 -->
+          <div id="card_4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" class="card col-12 col-sm-4 col-md-3 main_cont__card main_cont__bg--fifth">
+            <img class="main_cont__img_gen" src="../img/imgs_pag_productos/imgs_polos/polo-4.webp" class="card-img-top" alt="polo unisex con mensaje lo unico imposible es aquello que no intentas">
+            <div class="card-body">
+              <h4 class="card-title main_cont__text_title main_cont__c--tertiary">POR AMOR</h4>
+              <p class="card-text main_cont__space_line_v main_cont__ft4-Regular main_cont__c--tertiary">Polo manga corta | Unisex | <span class="main_cont__ft4-Regular main_cont__c--tertiary">Mensaje motivacional</span>
+              </p>
+              <p class="main_cont__c--tertiary main_cont__c--quaternary main_cont__text_precio">
+                <span class="main_cont__text_small">S/60.00</span>S/49.00
+              </p>
+              <a href="#" class="main_cont__btn main_cont__btn--text--card main_cont__btn--primary p-2">Agregar
+                <svg id="icon-cart" class="main_cont__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+              </a>
+            </div>
+          </div>
+          <!-- Fin Card4 -->
+        </article>
+      </section>
+      <!-- Fin de Cards Polos -->
+      <!-- Inicio de Cards Tazas Personalizadas -->
+      <section id="cards_tazas" class="row main_cont__cards">
+        <h3 data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" class="col-12 main_cont__ft3-Regular main_cont__c--primary h2 mb-3 mt-5">Tazas Personalizadas</h3>
+        <article class="main_cont__card_gen">
+          <!-- Cardt1 -->
+          <div id="card_t1" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" class="card col-12 col-sm-4 col-md-3 main_cont__card main_cont__bg--fifth">
+            <img class="main_cont__img_gen" src="../img/imgs_pag_productos/imgs_tazas/taza-1.webp" class="card-img-top" alt="taza personalizada desde una foto de novios">
+            <div class="card-body">
+              <h4 class="card-title main_cont__text_title main_cont__c--tertiary">POR AMOR</h4>
+              <p class="card-text main_cont__space_line_v main_cont__ft4-Regular main_cont__c--tertiary">Tazas Personalizadas | Foto<br>de novios | Frío a Caliente<span class="main_cont__ft4-Regular main_cont__c--tertiary">Mensaje motivacional</span>
+              </p>
+              <p class="main_cont__c--tertiary main_cont__c--quaternary main_cont__text_precio">
+                <span class="main_cont__text_small">S/35.00</span>S/30.00
+              </p>
+              <a href="#" class="main_cont__btn main_cont__btn--text--card main_cont__btn--primary p-2">Agregar
+                <svg id="icon-cart" class="main_cont__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+              </a>
+            </div>
+          </div>
+          <!-- Fin Cardt1 -->
+          <!-- Cardt2 -->
+          <div id="card_t2" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" class="card col-12 col-sm-4 col-md-3 main_cont__card main_cont__bg--fifth">
+            <img class="main_cont__img_gen" src="../img/imgs_pag_productos/imgs_tazas/taza-2.webp" class="card-img-top" alt="taza personalizada a un lado se muestra una foto de los novios y en el lado posterior un mensaje en resumen te dire que eres mi todo">
+            <div class="card-body">
+              <h4 class="card-title main_cont__text_title main_cont__c--tertiary">POR AMOR</h4>
+              <p class="card-text main_cont__space_line_v main_cont__ft4-Regular main_cont__c--tertiary">Tazas Personalizadas | Foto<br>de novios | <span class="main_cont__ft4-Regular main_cont__c--tertiary">Mensaje motivacional</span>
+              </p>
+              <p class="main_cont__c--tertiary main_cont__c--quaternary main_cont__text_precio">
+                <span class="main_cont__text_small">S/35.00</span>S/30.00
+              </p>
+              <a href="#" class="main_cont__btn main_cont__btn--text--card main_cont__btn--primary p-2">Agregar
+                <svg id="icon-cart" class="main_cont__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+              </a>
+            </div>
+          </div>
+          <!-- Fin Cardt2 -->
+        </article>
+        <!-- Fin de Cards -->
+        </section>
+        <!-- Fin de Cards Tazas Personalizadas -->
+        <!-- Inicio de Cards Fundas -->
+        <section id="cards_fundas" class="row main_cont__cards">
+          <h3 data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" class="col-12 main_cont__ft3-Regular main_cont__c--primary h2 mb-3 mt-5">Fundas de celulares</h3>
+          <article class="main_cont__card_gen">
+            <!-- Cardf1 -->
+            <div id="card_f1" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" class="card col-12 col-sm-4 col-md-3 main_cont__card main_cont__bg--fifth">
+              <img class="main_cont__img_gen" src="../img/imgs_pag_productos/imgs_fundas/funda-1.webp" class="card-img-top" alt="funda con mensaje aqui hemos venido a brillar">
+              <div class="card-body">
+                <h4 class="card-title main_cont__text_title main_cont__c--tertiary">POR AMOR</h4>
+                <p class="card-text main_cont__space_line_v main_cont__ft4-Regular main_cont__c--tertiary">Funda de celular | Color Rosa | Android & iOS <span class="main_cont__ft4-Regular main_cont__c--tertiary">Mensaje motivacional</span>
+                </p>
+                <p class="main_cont__c--tertiary main_cont__c--quaternary main_cont__text_precio">
+                  <span class="main_cont__text_small">S/25.00</span>S/20.00
+                </p>
+                <a href="#" class="main_cont__btn main_cont__btn--text--card main_cont__btn--primary p-2">Agregar
+                  <svg id="icon-cart" class="main_cont__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                </a>
+              </div>
+            </div>
+            <!-- Fin Cardf1 -->
+            <!-- Cardf2 -->
+            <div id="card_f2" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" class="card col-12 col-sm-4 col-md-3 main_cont__card main_cont__bg--fifth">
+              <img class="main_cont__img_gen" src="../img/imgs_pag_productos/imgs_fundas/funda-2.webp" class="card-img-top" alt="funda diseño bicicleta">
+              <div class="card-body">
+                <h4 class="card-title main_cont__text_title main_cont__c--tertiary">POR AMOR</h4>
+                <p class="card-text main_cont__space_line_v main_cont__ft4-Regular main_cont__c--tertiary">Funda de celular | Color Verde | Android & iOS <span class="main_cont__ft4-Regular main_cont__c--tertiary">Mensaje motivacional</span>
+                </p>
+                <p class="main_cont__c--tertiary main_cont__c--quaternary main_cont__text_precio">
+                  <span class="main_cont__text_small">S/25.00</span>S/20.00
+                </p>
+                <a href="#" class="main_cont__btn main_cont__btn--text--card main_cont__btn--primary p-2">Agregar
+                  <svg id="icon-cart" class="main_cont__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                </a>
+              </div>
+            </div>
+            <!-- Fin Cardf2 -->
+          </article>
+        </section>
+        <!-- Fin de Cards fundas-->
+      <!-- Fin de Cards-->
     <div class="icon_whatsapp_fixed">
       <a href="https://wa.me/?text=urlencodedtext" target="_blank">
         <img src="../img/imgs_gen/whatsapp_floating.svg" alt="boton de whatsapp que redirecciona a otra pagina para contactarse con por amor">
