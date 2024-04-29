@@ -45,5 +45,17 @@
     &__bg--fifth{
         background-color: $background-fifth;
     }
+
+    &__desc{
+        padding: 0.25em 0.25em;
+        border-radius: 0.5em 0.5em 0 0.5em;
+        width: 5em;
+        background: $background-secundary;
+        text-align: center;
+        font-weight: 600;
+        position: absolute;
+        right: -1px;
+        top: -20px;
+    }
 }
 /* Fin Contenido General */
