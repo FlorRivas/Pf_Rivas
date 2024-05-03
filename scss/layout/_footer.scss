@@ -155,10 +155,11 @@ footer {
     &__cont2 .bi_wht {
         background-image: url(../img/imgs_gen/whatsapp.svg);
     }
-    &__cont2 .bi_fb {
-        background-image: url(../img/imgs_gen/facebook.svg);
-    }
-    &__cont2 .icn.bi_ig {
-        background-image: url(../img/imgs_gen/Instagram.svg);
-    }
+}
+
+.bi_fb {
+    background-image: url(../img/imgs_gen/facebook.svg);
+}
+.bi_ig {
+    background-image: url(../img/imgs_gen/Instagram.svg);
 }

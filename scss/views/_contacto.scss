@@ -1,0 +1,33 @@
+@use '../utilities/mixins';
+@use '../utilities/functions';
+
+/* Pagina Contacto*/ 
+.cont_form_rrss {
+    width: 100%;
+    padding: functions.pixeles-em(64) functions.pixeles-em(64) functions.pixeles-em(48);
+    
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 0;
+        gap: 1em;
+    }
+
+    & ul .link_secc a {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        @include movil(1024px){
+            cursor: none;
+        }
+    }
+
+    &__icn {
+        width: 32px;
+        height: 32px;
+        margin-right: 5px;
+        background-repeat: no-repeat;
+        flex: none;
+    }
+}

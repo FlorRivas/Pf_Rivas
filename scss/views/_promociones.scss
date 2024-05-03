@@ -1,0 +1,21 @@
+@use '../utilities/mixins';
+@use '../utilities/functions';
+
+/* Paginas Promociones */
+.cont_anuncio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__img{
+        background-size: cover;
+        background-repeat: no-repeat;
+        aspect-ratio: auto;
+        margin: 3em 0 2em;
+        @include movil(1404px){
+            background-image: url(../../img/imgs_pag_promociones/promo_anuncio/flyer_1.jpg);
+        }
+        @include movil(){
+            background-image: url(../../img/imgs_pag_promociones/promo_anuncio/flyer_2.jpg);
+        }
+    }
+}

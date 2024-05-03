@@ -591,6 +591,59 @@ a:hover {
 }
 
 /* Fin de Pagina Productos */
+/* Paginas Promociones */
+.cont_anuncio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cont_anuncio__img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: auto;
+  margin: 3em 0 2em;
+}
+@media screen and (max-width: 1404px) {
+  .cont_anuncio__img {
+    background-image: url(../../img/imgs_pag_promociones/promo_anuncio/flyer_1.jpg);
+  }
+}
+@media screen and (max-width: 768px) {
+  .cont_anuncio__img {
+    background-image: url(../../img/imgs_pag_promociones/promo_anuncio/flyer_2.jpg);
+  }
+}
+
+/* Pagina Contacto*/
+.cont_form_rrss {
+  width: 100%;
+  padding: 4em 4em 3em;
+}
+.cont_form_rrss ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 0;
+  gap: 1em;
+}
+.cont_form_rrss ul .link_secc a {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .cont_form_rrss ul .link_secc a {
+    cursor: none;
+  }
+}
+.cont_form_rrss__icn {
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  flex: none;
+}
+
 /*  Footer */
 footer {
   position: relative;
@@ -741,10 +794,12 @@ footer {
 .pie_pag__cont2 .bi_wht {
   background-image: url(../img/imgs_gen/whatsapp.svg);
 }
-.pie_pag__cont2 .bi_fb {
+
+.bi_fb {
   background-image: url(../img/imgs_gen/facebook.svg);
 }
-.pie_pag__cont2 .icn.bi_ig {
+
+.bi_ig {
   background-image: url(../img/imgs_gen/Instagram.svg);
 }
 
