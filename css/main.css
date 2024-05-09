@@ -614,8 +614,20 @@ a:hover {
   }
 }
 
+form label {
+  color: #f1bf7b;
+}
+
 .form {
-  padding: 4em 4em 0.25em;
+  padding: 3em 3em 2em;
+  border-radius: 21px;
+  border: 1px solid #f1bf7b;
+}
+
+.legend {
+  font-family: "NotoSans-Regular";
+  color: #f2f2f2;
+  margin-bottom: 1em;
 }
 
 /* Pagina Contacto*/

@@ -1,6 +1,18 @@
 @use '../utilities/mixins';
 @use '../utilities/functions';
 
+form label{
+    color: $color-primary;
+}
+
 .form{
-    padding: functions.pixeles-em(64) functions.pixeles-em(64) functions.pixeles-em(4);
+    padding: functions.pixeles-em(48) functions.pixeles-em(48) functions.pixeles-em(32);
+    border-radius: 21px;
+    border: 1px solid $color-primary;
+}
+
+.legend{
+    font-family: $font-secundary;
+    color: $color-fifth;
+    margin-bottom: 1em;
 }
