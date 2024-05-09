@@ -80,23 +80,34 @@
         </article>
         <article class="col-12 col-md-6">
           <form action="">
-            <h2 class="main_cont__ft4-Regular main_cont__c--secundary h2">Cont&aacute;ctanos</h2>
+            <legend class="main_cont__ft4-Regular main_cont__c--secundary h2">Cont&aacute;ctanos</legend>
             <div class="input-group">
-              <label for="name">Nombre</label>
-              <input type="text" name="name" id="name" placeholder="Nombre">
+              <div class="mb-3">
+                <label class="form-label" for="name">Nombre:</label>
+                <input class="form-control" type="text" name="name" id="name" placeholder="Nombre">
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="last-name">Apellidos:</label>
+                <input class="form-control" type="text" name="last-name" id="last-name" placeholder="Apellidos">
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="Ejemplo@ejemplo.com">
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="phone">Celular:</label>
+                <input class="form-control" type="tel" name="phone" id="phone" placeholder="+51 999999999">
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="item">Asunto:</label>
+                <input class="form-control" type="text" name="item" id="item" placeholder="">
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="message">Mensaje:</label>
+                <textarea class="form-control" name="message" id="message" cols="50" rows="5" placeholder="Mensaje"></textarea>
+              </div>
 
-              <label for="last-name">Apellidos</label>
-              <input type="text" name="last-name" id="last-name" placeholder="Apellidos">
-
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" placeholder="Ejemplo@ejemplo.com">
-
-              <label for="phone">Celular</label>
-              <input type="tel" name="phone" id="phone" placeholder="+51 999999999">
-
-              <label for="item">Asunto</label>
-              <input type="text" name="item" id="item" placeholder="">
-
+              <input class="btn_form" type="submit" value="Enviar">
             </div>
           </form>
         </article>

@@ -614,6 +614,10 @@ a:hover {
   }
 }
 
+.form {
+  padding: 4em 4em 0.25em;
+}
+
 /* Pagina Contacto*/
 .cont_form_rrss {
   width: 100%;
