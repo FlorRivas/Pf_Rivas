@@ -634,7 +634,7 @@ form label {
   padding: 0.6em 0.8em;
   background: #f1bf7b;
   color: #262626;
-  border-radius: 0.8em;
+  border-radius: 0.8em !important;
   border: none;
 }
 .btn_form:hover {

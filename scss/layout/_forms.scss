@@ -21,7 +21,7 @@ form label{
     padding: .6em .8em;
     background: $background-secundary;
     color: $color-tertiary;
-    border-radius: .8em;
+    border-radius: .8em !important;
     border: none;
     &:hover{
         background: $background-tertiary;
