@@ -630,6 +630,17 @@ form label {
   margin-bottom: 1em;
 }
 
+.btn_form {
+  padding: 0.6em 0.8em;
+  background: #f1bf7b;
+  color: #262626;
+  border-radius: 0.8em;
+  border: none;
+}
+.btn_form:hover {
+  background: #fbeed9;
+}
+
 /* Pagina Contacto*/
 .cont_form_rrss {
   width: 100%;

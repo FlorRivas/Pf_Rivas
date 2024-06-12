@@ -16,3 +16,14 @@ form label{
     color: $color-fifth;
     margin-bottom: 1em;
 }
+
+.btn_form{
+    padding: .6em .8em;
+    background: $background-secundary;
+    color: $color-tertiary;
+    border-radius: .8em;
+    border: none;
+    &:hover{
+        background: $background-tertiary;
+    }
+}
