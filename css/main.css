@@ -165,12 +165,12 @@ ul li a {
   }
 }
 .navegacion__cont_iconos_nav-busqueda {
-  width: 14em;
+  width: 13.5em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.4375em;
 }
 @media screen and (max-width: 1500px) {
   .navegacion__cont_iconos_nav-busqueda {
@@ -200,7 +200,7 @@ ul li a {
     gap: 1em;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
-  .navegacion__cont_input:checked + .navegacion__cont_nav {
+  .navegacion__cont_input:checked + .navegacion__cont_nav, .navegacion__cont_input:checked + .navegacion__cont_icono_nav {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     overflow-x: hidden;
   }

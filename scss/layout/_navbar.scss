@@ -79,13 +79,14 @@
             }
             
             &-busqueda {
-                width: functions.pixeles-em(224);
+                width: functions.pixeles-em(216);
                 @include mixins.flexible(flex, row, space-between, center);
-                gap: functions.pixeles-em(8);
+                gap: functions.pixeles-em(7);
                 @include movil(1500px){
                     margin-bottom: functions.pixeles-em(16);
                 }
             }
+            
         }
 
         &_label, 
@@ -110,7 +111,8 @@
                 gap: functions.pixeles-em(16);
                 clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             }
-            &_input:checked + &_nav{
+            &_input:checked + &_nav,
+            &_input:checked + &_icono_nav{
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
                 overflow-x: hidden;
             }
